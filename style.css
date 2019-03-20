@@ -1,3 +1,13 @@
 body{
-    background: red;
+    background: transparent;
+    text-align: center;
+}
+
+.jumbotron{
+    background-color: transparent;
+    text-align: center;
+}
+
+.card-text{
+    background-color: #212529;
 }
