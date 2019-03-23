@@ -20,24 +20,13 @@ $.ajax({
         console.log(queryURL);
 
         // Log the resulting object
-        console.log(response);
+        // console.log(response.report.foods[1].name);
 
-        var results = response.data;
+        var results = response.report.foods;
 
         for (var i = 0; i < results.length; i++) {
-            console.log(results[i].report.foods.name);
+            console.log(response.report.foods[i].name);
+            console.log(response.report.foods[i].nutrients[0].value)
         }
-
-
-
-        // Transfer content to HTML
-        // $(".city").html("<h1>" + response.name + " Weather Details</h1>");
-        // $(".wind").text("Wind Speed: " + response.wind.speed);
-        // $(".humidity").text("Humidity: " + response.main.humidity);
-        // $(".temp").text("Temperature (F) " + response.main.temp);
-
-        // // Log the data in the console as well
-        // console.log("Wind Speed: " + response.wind.speed);
-        // console.log("Humidity: " + response.main.humidity);
-        // console.log("Temperature (F): " + response.main.temp);
+        // asjdhaksdjhasd
     });
