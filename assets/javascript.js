@@ -28,5 +28,5 @@ $.ajax({
             console.log(response.report.foods[i].name);
             console.log(response.report.foods[i].nutrients[0].value)
         }
-
+        // asjdhaksdjhasd
     });
