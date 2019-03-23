@@ -1,6 +1,7 @@
 body{
     background: transparent;
     text-align: center;
+    font-family: Sans, Verdana, Sans-Serif;
 }
 
 .jumbotron{
@@ -8,6 +9,65 @@ body{
     text-align: center;
 }
 
-.card-text{
-    background-color: #212529;
+.row{
+    margin-bottom: 100px;
+}
+
+.navbar{
+    border-bottom: solid #ffc954 3px;
+}
+
+.display-4{
+    margin-top: 50px;
+}
+
+.lead{
+    margin-bottom: 25px;
+}
+
+.d-block{
+    width: 100%;
+}
+
+.card-title .form-inline{
+    text-align: center;
+     
+}
+
+.card-img-overlay{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+.btn-outline-secondary{
+    background-color: #ffc954;
+}
+
+
+
+
+@media (max-width: 576px) { 
+
+    .card-img{
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .img-fluid{
+        height: 300px;
+    }
+
+        .input-group-lg{
+            width: 100%;
+            width: 300px;
+            right: 75px;
+        }
+
+        .header-text{
+            font-size: 45px;
+        }
+    
 }
