@@ -1,7 +1,7 @@
 body{
     background: transparent;
     text-align: center;
-    font-family: Sans, Verdana, Sans-Serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .jumbotron{
@@ -13,8 +13,12 @@ body{
     margin-bottom: 100px;
 }
 
+
+
 .navbar{
     border-bottom: solid #ffc954 3px;
+    width: 100%;
+    
 }
 
 .display-4{
@@ -45,6 +49,8 @@ body{
 .btn-outline-secondary{
     background-color: #ffc954;
 }
+
+
 
 
 
