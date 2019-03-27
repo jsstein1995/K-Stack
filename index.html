@@ -39,6 +39,33 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Stats</a>
         </li>
+
+        <form class="form-inline">
+
+
+          <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+          <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+          </div>
+          <label class="sr-only" for="inlineFormInputName2">Name</label>
+          <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Password">
+
+          <div class="form-check mb-2 mr-sm-2">
+            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+            <label class="form-check-label" for="inlineFormCheck">
+              Remember me
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-warning mb-2">Submit</button>
+        </form>
+
+
+
+
       </ul>
     </div>
   </nav>
@@ -53,7 +80,7 @@
 
         <!-- Place Holder Search Food Bar Use for API -->
 
-        <input type="text" class="form-control" placeholder="Search Food" id="foodItem" aria-label="Search"
+        <input type="text" class="form-control" placeholder="What did you eat today?" id="foodItem" aria-label="Search"
           aria-describedby="button-addon2">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Submit</button>
@@ -107,27 +134,45 @@
   <!-- To Be Continued -->
   <!-- To Be Continued -->
   <!-- To Be Continued -->
-  <h3 class="display-4">Take Control of your Calories</h3>
-  <p class="lead">Get Results</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur, veritatis molestias ut quam voluptate
-    corporis deleniti voluptatibus quisquam libero adipisci non quos cupiditate neque explicabo beatae! Accusantium,
-    illum nihil.</p>
+  <h3 class="display-4">Why counting calories helps you lose weight.</h3>
+  <p class="lead">Get Results Now!</p>
+  <p>How to Lose Weight Counting Calories.</p>
+  <br>
+
+  <!-- Youtube embeded video -->
+  <div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Zus8gkwkPvs"></iframe>
+  </div>
+
+
+
   <br>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio animi ipsum fugit sunt distinctio laudantium
     explicabo doloremque, impedit, laboriosam cumque, nobis reprehenderit eius vitae ratione ea recusandae! Deleniti,
     ducimus sapiente.</p>
 
-  <br>
 
 
 
+  <!-- Sign Up Image-->
   <!--code for the login box-->
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    Sign Up Today
-  </button>
 
-  <!-- Modal -->
+
+  <div class="card bg-dark text-white">
+    <img src="./img/signup.jpg" class="card-img" alt="Header-Food">
+    <div class="card-img-overlay">
+      <h1 class="signUpText">Calorie Stacker Features</h1>
+      <br>
+
+      <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+        Sign Up Today
+      </button>
+    </div>
+  </div>
+
+
+  <!--  Modal (Alert PopUp to Sign Up For Services  -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -149,7 +194,7 @@
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Create Password">
               </div>
             </div>
             <div class="form-group">
@@ -185,18 +230,11 @@
                 </label>
               </div>
             </div>
-
           </form>
-
-
-
-
-
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-warning">Save changes</button>
         </div>
       </div>
     </div>

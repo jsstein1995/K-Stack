@@ -50,6 +50,23 @@ body{
     background-color: #ffc954;
 }
 
+.embed-responsive{
+    height: 600px;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.space{
+    margin-bottom: 30%;
+}
+
+.signUpText{
+    
+}
+
+
+
 .foodDiv {
     width: 100%;
 }
@@ -76,6 +93,10 @@ body{
 
         .header-text{
             font-size: 45px;
+        }
+
+        .embed-responsive{
+            height: 400px;
         }
     
 }
