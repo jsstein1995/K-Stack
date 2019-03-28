@@ -37,7 +37,7 @@ function foodSearch() {
                     console.log(input);
 
                     var newDiv = $('<div>').addClass("foodContainerDiv");
-                    var foodDiv = $('<div>').addClass("foodDiv");
+                    var foodDiv = $('<div>').addClass("foodDiv").addClass("clickable");
                     foodDiv.attr("data-foodId", ndbno);
                     $('#results').append(foodDiv);
                     foodDiv.text(response.list.item[i].name);
@@ -50,8 +50,9 @@ function foodSearch() {
 }
 foodSearch();
 
-$(document).on('click', '.foodDiv', function (event) {
+$(document).on('click', '.clickable', function (event) {
     event.preventDefault();
+    $(this).removeClass('clickable');
 
     // gets the value from the data-foodId attribute of the item that was clicked 
     console.log($(this).attr('data-foodid'))
