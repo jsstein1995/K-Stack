@@ -92,6 +92,7 @@ body{
 .foodDiv:hover{
     background-color: #ffc954;
     cursor: pointer;
+    font-size: 30px;
     
 
 
