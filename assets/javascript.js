@@ -1,5 +1,8 @@
 console.log("hello")
 
+// global variables
+numArray = [];
+
 var APIKey = "PuomHh8yRq8TRNyZHPNAaEW8s5H5dSuKDkAMsQWU";
 
 // Here we are building the URL we need to query the database
@@ -49,7 +52,7 @@ function foodSearch() {
 }
 foodSearch();
 
-$(document).on('click', '.clickable', function (event) {
+$(document).on('click', '.clickable', 'total()', function (event) {
     event.preventDefault();
     $(this).removeClass('clickable');
 
@@ -68,7 +71,6 @@ $(document).on('click', '.clickable', function (event) {
         // We store all of the retrieved data inside of an object called "response"
         .then(function (response) {
             var calories = response.report.foods[0].nutrients[0].value;
-            var calories = response.report.foods[0].nutrients[0].value;
             var measure = response.report.foods[0].measure;
             console.log(response.report.foods[0].measure);
             console.log(calories);
@@ -76,20 +78,40 @@ $(document).on('click', '.clickable', function (event) {
             var calDiv = $('<span>')
             var containerDiv = $('<div>').addClass("calDiv");
             containerDiv.append(calDiv);
-            var xDiv = $('<span class="delete">X</span></div>');
+            var xDiv = $('<span class="delete"> X</span></div>');
             containerDiv.append(xDiv);
             $("#calories").append(containerDiv);
             calDiv.text(calories);
 
-            // var nutDiv = $('<div>').addClass("nutDiv");
             self.append(" " + measure + " ");
             self.append("kcal= " + calories);
+
+
+            calories = parseInt(calories);
+            numArray.push(calories);
+            console.log(numArray);
+
+            var sum = numArray.reduce(add);
+
+            function add(accumulator, a) {
+                return accumulator + a;
+            }
+            console.log(sum);
+            $("#total").empty();
+            var totalDiv = $('<span>');
+            var totalContainer = $('<div>').addClass("totalDiv");
+            totalContainer.append(totalDiv);
+            $("#total").append(totalContainer);
+            totalDiv.text('Total calories=' + ' ' + sum);
         });
 
 });
 
 $(document).on('click', '.delete', function () {
     $(this).parent().remove();
+
+    // FIX: adjust new total
+
 })
-// Things to fix:
-// only click once
+
+
