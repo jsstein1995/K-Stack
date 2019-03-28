@@ -1,5 +1,6 @@
 body{
     font-family: 'Quicksand';
+    
 
 }
 
@@ -19,4 +20,9 @@ nav{
 
 #nav-mobile{
     font-size: 22px;
+}
+
+.card{
+    margin-top: 0;
+    text-align: center;
 }
