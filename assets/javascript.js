@@ -71,7 +71,15 @@ $(document).on('click', '.clickable', function (event) {
             var calories = response.report.foods[0].nutrients[0].value;
             var measure = response.report.foods[0].measure;
             console.log(response.report.foods[0].measure);
-            console.log(response);
+            console.log(calories);
+
+            var calDiv = $('<span>')
+            var containerDiv = $('<div>').addClass("calDiv");
+            containerDiv.append(calDiv);
+            var xDiv = $('<span class="delete">X</span></div>');
+            containerDiv.append(xDiv);
+            $("#calories").append(containerDiv);
+            calDiv.text(calories);
 
             // var nutDiv = $('<div>').addClass("nutDiv");
             self.append(" " + measure + " ");
@@ -80,27 +88,8 @@ $(document).on('click', '.clickable', function (event) {
 
 });
 
+$(document).on('click', '.delete', function () {
+    $(this).parent().remove();
+})
 // Things to fix:
 // only click once
-
-
-var yelpKey = "lJVKbgVisH0G_yoxC73ZR4IBG5yWPjT2LrcG-RsRs7lw5YYaR8mwIF1XSqsOZN7h_pROU1bAB5BmV1rAOL1fXgiSoOvv8Zuu4QfC38pF50FiF_JS6uCkRB0rfxacXHYx";
-function yelp() {
-    // $("#").on('click', function (event) {
-    // event.preventDefault();
-    var input = $("#foodItem").val().trim();
-    var queryURL = "https://api.nal.usda.gov/ndb/search/?format=json&q=" + input + "&sort=r&max=10&ds=Standard Reference&offset=0&api_key=" + yelpKey;
-
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-    })
-        // We store all of the retrieved data inside of an object called "response"
-        .then(function (response) {
-
-            // Log the queryURL
-            console.log(queryURL);
-            console.log(response);
-        })
-}
-yelp();
