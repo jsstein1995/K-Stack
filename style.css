@@ -43,7 +43,16 @@ body{
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+   
   
+}
+
+.card{
+    border: none;
+}
+
+.signUpText{
+    color: #343a40;
 }
 
 .btn-outline-secondary{
@@ -57,9 +66,7 @@ body{
     margin-left: 10%;
 }
 
-.space{
-    margin-bottom: 30%;
-}
+
 
 
 
@@ -68,14 +75,17 @@ body{
     width: 80%;
     justify-content: center;
     margin-left: 10%;
+    margin-bottom: 80px;
 }
 
-.space{
-    margin-bottom: 30%;
-}
+
+
+/* foodDiv from JavaScript */
+
 
 
 .calDiv {
+
     width: 100%;
 }
 
@@ -85,15 +95,16 @@ body{
 
 
 .foodDiv{
-    width: 100%;
+
     
+    width: 100%;    
+
 }
+
 .foodDiv:hover{
     background-color: #ffc954;
     cursor: pointer;
     font-size: 30px;
-    
-
 
 }
 
@@ -123,6 +134,10 @@ body{
 
         .embed-responsive{
             height: 400px;
+        }
+
+        .btn-lg{
+            
         }
     
 }
