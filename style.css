@@ -67,8 +67,17 @@ body{
 
 
 
-.foodDiv {
+.foodDiv{
+    
     width: 100%;
+    
+}
+.foodDiv:hover{
+    background-color: #ffc954;
+    cursor: pointer;
+    
+
+
 }
 
 
