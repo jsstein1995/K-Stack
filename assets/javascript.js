@@ -30,7 +30,6 @@ function foodSearch() {
                 $('.foodDiv').empty();
                 var foodList = response.list.item;
                 // Log the resulting object
-                // console.log(response.report.foods[1].name);
                 for (var i = 0; i < foodList.length; i++) {
 
                     var ndbno = response.list.item[i].ndbno;
@@ -83,3 +82,25 @@ $(document).on('click', '.clickable', function (event) {
 
 // Things to fix:
 // only click once
+
+
+var yelpKey = "lJVKbgVisH0G_yoxC73ZR4IBG5yWPjT2LrcG-RsRs7lw5YYaR8mwIF1XSqsOZN7h_pROU1bAB5BmV1rAOL1fXgiSoOvv8Zuu4QfC38pF50FiF_JS6uCkRB0rfxacXHYx";
+function yelp() {
+    // $("#").on('click', function (event) {
+    // event.preventDefault();
+    var input = $("#foodItem").val().trim();
+    var queryURL = "https://api.nal.usda.gov/ndb/search/?format=json&q=" + input + "&sort=r&max=10&ds=Standard Reference&offset=0&api_key=" + yelpKey;
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
+        // We store all of the retrieved data inside of an object called "response"
+        .then(function (response) {
+
+            // Log the queryURL
+            console.log(queryURL);
+            console.log(response);
+        })
+}
+yelp();
