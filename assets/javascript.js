@@ -15,7 +15,7 @@ function foodSearch() {
         event.preventDefault();
 
         var input = $("#foodItem").val().trim();
-        var queryURL = "https://api.nal.usda.gov/ndb/search/?format=json&q=" + input + "&sort=r&max=50&ds=Standard Reference&offset=0&api_key=" + APIKey;
+        var queryURL = "https://api.nal.usda.gov/ndb/search/?format=json&q=" + input + "&sort=r&max=10&ds=Standard Reference&offset=0&api_key=" + APIKey;
 
         $.ajax({
             url: queryURL,
@@ -27,60 +27,58 @@ function foodSearch() {
                 // Log the queryURL
                 console.log(queryURL);
                 console.log(response);
-
+                $('.foodDiv').empty();
+                var foodList = response.list.item;
                 // Log the resulting object
                 // console.log(response.report.foods[1].name);
+                for (var i = 0; i < foodList.length; i++) {
 
-                var ndbno = response.list.item[0].ndbno;
-                console.log(input);
+                    var ndbno = response.list.item[i].ndbno;
+                    console.log(input);
 
-                var newDiv = $('<div>').addClass("foodContainerDiv");
-                var foodDiv = $('<div>').addClass("foodDiv");
-                foodDiv.attr("data-foodId", ndbno);
-                $('#results').append(foodDiv);
-                foodDiv.text(ndbno);
-                console.log(ndbno);
+                    var newDiv = $('<div>').addClass("foodContainerDiv");
+                    var foodDiv = $('<div>').addClass("foodDiv");
+                    foodDiv.attr("data-foodId", ndbno);
+                    $('#results').append(foodDiv);
+                    foodDiv.text(response.list.item[i].name);
+                    console.log(ndbno);
 
-
-
-
+                }
             });
     })
+
 }
-
 foodSearch();
-
 
 $(document).on('click', '.foodDiv', function (event) {
     event.preventDefault();
-    console.log($(this).attr('data-foodid'))
 
+    // gets the value from the data-foodId attribute of the item that was clicked 
+    console.log($(this).attr('data-foodid'))
 
     var foodId = $(this).attr('data-foodid')
     var nutritionqueryURL = "https://api.nal.usda.gov/ndb/nutrients/?format=json&api_key=PuomHh8yRq8TRNyZHPNAaEW8s5H5dSuKDkAMsQWU&ndbno=" + foodId + "&nutrients=205&nutrients=204&nutrients=208&nutrients=269";
     // https://api.nal.usda.gov/ndb/nutrients/?format=json&api_key=DEMO_KEY&nutrients=205&nutrients=204&nutrients=208&nutrients=269&ndbno=01009
+    var self = $(this);
+
     $.ajax({
         url: nutritionqueryURL,
         method: "GET"
     })
         // We store all of the retrieved data inside of an object called "response"
         .then(function (response) {
+            var calories = response.report.foods[0].nutrients[0].value;
+            var calories = response.report.foods[0].nutrients[0].value;
+            var measure = response.report.foods[0].measure;
+            console.log(response.report.foods[0].measure);
             console.log(response);
+
+            // var nutDiv = $('<div>').addClass("nutDiv");
+            self.append(" " + measure + " ");
+            self.append("kcal= " + calories);
         });
 
 });
 
-
-// for (var i = 0; i < results.length; i++) {
-                //     var calories = response.report.foods[i].nutrients[0].value;
-                //     var foodItem = response.report.foods[i].name
-                //     // console.log(foodItem);
-                //     // console.log(calories)
-
-                //     if (input === foodItem) {
-                //         console.log(calories);
-                //     }
-                //     else {
-                //         console.log("no match");
-                //     }
-                // }
+// Things to fix:
+// only click once
