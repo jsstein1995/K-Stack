@@ -1,0 +1,22 @@
+body{
+    font-family: 'Quicksand';
+
+}
+
+.brand-logo{
+    margin-left: 1%;
+    margin-top: 5px;
+}
+
+
+
+nav{
+    background-color: #424242;
+    border-bottom: solid #ffc954 3px;
+    font-size: 22px;
+    
+}
+
+#nav-mobile{
+    font-size: 22px;
+}
