@@ -80,21 +80,25 @@ body{
 
 
 
-
-
-
-
 /* foodDiv from JavaScript */
 
-.foodDiv {
+
+
+.calDiv {
+
+    width: 100%;
+}
+
+.totalDiv {
     width: 100%;
 }
 
 
-
 .foodDiv{
+
     
     width: 100%;    
+
 }
 
 .foodDiv:hover{
