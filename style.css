@@ -75,17 +75,16 @@ body{
 }
 
 
+.calDiv {
+    width: 100%;
+}
 
-
-
-.foodDiv {
+.totalDiv {
     width: 100%;
 }
 
 
-
 .foodDiv{
-    
     width: 100%;
     
 }
