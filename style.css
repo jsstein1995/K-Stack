@@ -61,8 +61,25 @@ body{
     margin-bottom: 30%;
 }
 
-.signUpText{
-    
+
+
+.embed-responsive{
+    height: 600px;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.space{
+    margin-bottom: 30%;
+}
+
+
+
+
+
+.foodDiv {
+    width: 100%;
 }
 
 
