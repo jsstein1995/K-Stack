@@ -16,9 +16,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/stats.css">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+
     <title>Stats</title>
 </head>
 
@@ -28,6 +37,7 @@
     <nav>
         <div class="nav-wrapper">
             <img src="./img/logoX.png" width="50" height="50" class="brand-logo"><strong class="logoHead"></a>
+                <a class="logoName"><strong>Calorie Stacker</strong></a>
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
 
@@ -41,14 +51,71 @@
 
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/stats.jpg">
+            <img class="activator" src="./img/fruits.jpg">
         </div>
-        <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4 center">Click</i></span>
 
-        </div>
-        <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4 center"><i class="material-icons right">close</i></span>
+
+
+
+        <!-- Inside Stats Card Content -->
+        <!-- Inside Stats Card Content -->
+        <!-- Inside Stats Card Content -->
+        <!-- Inside Stats Card Content -->
+        <!-- Inside Stats Card Content -->
+
+        <h3>Find out your average Calorie Stacker per day.</h3>
+
+
+
+        <!-- Radio -->
+        <form action="#">
+            <p>
+                <label>
+                    <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked />
+                    <span>Male</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input id="female" type="radio" name="gender" onchange="calsPerDay()" />
+                    <span> Female</span>
+                </label>
+            </p>
+
+
+            <p>
+                <label>
+                    <input id="age" type="number" oninput="calsPerDay()" value="35" />
+                    <span> Age:</span>
+                    Years
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input id="height" type="number" oninput="calsPerDay()" value="66">
+                    <span> Height:</span>
+                    total inches (12 inches = 1 ft.)
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input id="weight" type="number" oninput="calsPerDay()" value="165">
+                    <span> Weight: </span>
+                    total pounds
+                </label>
+            </p>
+
+
+
+            <p>
+                <label onclick="calsPerDay">
+                    Base metabolic rate: <span id="totalCals"></span> kcal per day
+                </label>
+            </p>
+
+
 
 
             <!-- Inside Stats Card Content -->
@@ -56,87 +123,16 @@
             <!-- Inside Stats Card Content -->
             <!-- Inside Stats Card Content -->
             <!-- Inside Stats Card Content -->
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./img/running.jpg">
+            </div>
 
-
-
-
-            <div class="row">
-
-                <div class="col-lg-12">
-
-
-
-                    <!-- Add Calories  -->
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><strong>Calorie Stacker</strong></h3>
-                        </div>
-                        <div class="panel-body">
-
-                            <!-- Entry Form -->
-                            <form>
-                                <div class="input-field inline">
-                                    <label for="name"><strong>Meal</strong></label>
-                                    <input class="form-control" id="name" placeholder="Breakfast" type="text">
-                                </div>
-                                <div class="input-field inline">
-                                    <label for="destination"><strong>Food</strong></label>
-                                    <input class="form-control" id="destination" placeholder="Food Name" type="text">
-                                </div>
-                                <div class="input-field inline">
-                                    <label for="first-time"><strong>Calories</strong></label>
-                                    <input class="form-control" id="first-time" placeholder="Amount" type="text">
-                                </div>
-                                <div class="input-field inline">
-                                    <label for="frequency"><strong>Frequency (min)</strong></label>
-                                    <input class="form-control" id="frequency" placeholder="15" type="text">
-                                </div>
-                                <button class="btn btn-warning float-left"
-                                    id="add-trainTimer-btn"><strong>Submit</strong></button>
-                            </form>
-
-                        </div> <!-- panel-body -->
-
-                    </div> <!-- panel -->
-
-
-
-                    <!-- Stats Table-->
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><strong>Stats</strong></h3>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-sm table-hover" id='train-table'>
-                                <thead>
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Meal</th>
-                                        <th scope="col">Food</th>
-                                        <th scope="col">Calories</th>
-                                        <th scope="col">Total</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                </div> <!-- column -->
-
-            </div> <!-- row -->
-
-        </div>
-        <!-- Inside Stats Card Content -->
-        <!-- Inside Stats Card Content -->
-        <!-- Inside Stats Card Content -->
-        <!-- Inside Stats Card Content -->
-        <!-- Inside Stats Card Content -->
     </div>
-    </div>
+
 
 
     <script type="text/javascript" src="js/materialize.min.js"></script>

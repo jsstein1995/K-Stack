@@ -47,6 +47,14 @@ body{
   
 }
 
+.form-check-label{
+    color: white;
+}
+
+.form-inline{
+    padding-left: 180px;
+}
+
 .card{
     border: none;
 }
@@ -80,7 +88,6 @@ body{
 
 
 
-/* foodDiv from JavaScript */
 
 
 
@@ -136,8 +143,10 @@ body{
             height: 400px;
         }
 
-        .btn-lg{
-            
+        .signUpText{
+            margin-top: -70px;
         }
+
+        
     
 }
