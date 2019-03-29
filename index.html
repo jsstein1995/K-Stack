@@ -17,14 +17,18 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <title>ProjectONE</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <title>Calorie Stacker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!--   NavBar Logo, Home & Link -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"> <img src="./img/logoX.png" width="50" height="50"
+    <a class="navbar-brand" href="index.html"> <img src="./img/logoX.png" width="50" height="50"
         class="d-inline-block align-center" alt=""><strong> Calorie Stacker</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +38,6 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./stats.html">Calculator</a>
@@ -58,7 +61,7 @@
             </label>
           </div>
 
-          <button type="submit" class="btn btn-warning mb-2">Submit</button>
+          <button type="submit" class="btn btn-warning mb-2">Sign In</button>
         </form>
 
 
@@ -91,16 +94,16 @@
   </div>
   <br>
 
-  <div class="row" id="results">
+  <div class="container">
+    <div class="row" id="results">
+    </div>
+    <div class="row" id="calories">
+    </div>
+    <div class="row" id="total">
+    </div>
   </div>
-  <div class="row" id="calories">
-  </div>
 
-  <div class="row" id="total">
-  </div>
-
-
-
+  <hr>
   <!-- Testimonials -->
   <h3 class="display-4">The Best Food Diary Tool!</h3>
   <p class="lead">Simple database. Powerful feedback.</p>
@@ -134,7 +137,7 @@
 
 
   <!-- Calorie Tablet Image-->
-  <img src="./img/calories.jpg" class="img-fluid" alt="Responsive image">
+  <!-- <img src="./img/calories.jpg" class="img-fluid" alt="Responsive image"> -->
 
 
   <!-- To Be Continued -->
@@ -149,7 +152,7 @@
 
   <!-- Youtube embeded video -->
   <div class="embed-responsive embed-responsive-4by3">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Zus8gkwkPvs"></iframe>
+    <iframe class="embed-responsive-item" id="youtube" src="https://www.youtube.com/embed/Zus8gkwkPvs"></iframe>
   </div>
 
 
