@@ -91,11 +91,8 @@ body{
 
 
 
-
-/* foodDiv from JavaScript */
-
-
 .calDiv {
+
     width: 100%;
 }
 
@@ -105,10 +102,10 @@ body{
 
 
 .foodDiv{
+
     
     width: 100%;    
-   
-    
+
 }
 
 .foodDiv:hover{
