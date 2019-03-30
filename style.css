@@ -13,12 +13,21 @@ body{
     margin-bottom: 100px;
 }
 
-
+.header-text{
+    position: relative;
+    top: -60px;
+    font-size: 80px;
+    font-weight: bold;
+}
 
 .navbar{
     border-bottom: solid #ffc954 3px;
     width: 100%;
-    
+}
+
+.bg-dark {
+    background-color: #1a3142!important;
+
 }
 
 .display-4{
@@ -43,8 +52,6 @@ body{
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
-  
 }
 
 .form-check-label{
@@ -64,7 +71,8 @@ body{
 }
 
 .btn-outline-secondary{
-    background-color: #ffc954;
+    /* background-color: #ffc954; */
+    color: white;
 }
 
 .embed-responsive{
@@ -73,10 +81,6 @@ body{
     justify-content: center;
     margin-left: 10%;
 }
-
-
-
-
 
 .embed-responsive{
     height: 600px;
@@ -86,36 +90,41 @@ body{
     margin-bottom: 80px;
 }
 
-
-
-
-
+.delete {
+    cursor: pointer;
+}
 
 .calDiv {
-
+    position: relative;
+    top: -60px;
     width: 100%;
+    font-size: 25px;
 }
 
 .totalDiv {
+    position: relative;
+    top: -120px;
     width: 100%;
+    font-size: 45px;
 }
 
+#total {
+    margin-bottom: 0;
+}
+
+hr {
+    border-width: 2px;
+}
 
 .foodDiv{
-
-    
     width: 100%;    
-
 }
 
 .foodDiv:hover{
     background-color: #ffc954;
     cursor: pointer;
     font-size: 30px;
-
 }
-
-
 
 
 @media (max-width: 576px) { 
@@ -145,8 +154,6 @@ body{
 
         .signUpText{
             margin-top: -70px;
-        }
-
-        
+        }      
     
 }

@@ -1,8 +1,6 @@
 body{
     font-family: 'Quicksand';
     color: black;
-    
-
 }
 
 .brand-logo{
@@ -10,19 +8,19 @@ body{
     margin-top: 5px;
 }
 
-
-
 nav{
-    background-color: #424242;
+    background-color: #1a3142;
     border-bottom: solid #ffc954 3px;
-    font-size: 22px;
-    
+    font-size: 22px; 
 }
 
 .logoName{
     margin-left: 6%;
 }
 
+#home-button {
+  margin-right: 30px;
+}
 #nav-mobile{
     font-size: 22px;
 }
@@ -32,13 +30,10 @@ nav{
     
 }
 
-
-
 h3{
     text-align: center;
     margin-top: 100px;
 }
-
 
 label {
     display: block;

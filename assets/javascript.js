@@ -78,7 +78,7 @@ $(document).on('click', '.clickable', 'total()', function (event) {
             var calDiv = $('<span>')
             var containerDiv = $('<div>').addClass("calDiv");
             containerDiv.append(calDiv);
-            var xDiv = $('<span class="delete"> X</span></div>');
+            var xDiv = $('<span class="delete"> <i class="fa fa-trash" aria-hidden="true"></i> </span></div>');
             containerDiv.append(xDiv);
             $("#calories").append(containerDiv);
             calDiv.text(calories);
@@ -112,16 +112,16 @@ $(document).on('click', '.delete', function () {
 
     // FIX: adjust new total
 
-    })
+})
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.dropdown-trigger');
-        var instances = M.Dropdown.init(elems, options);
-      });
-    
-      // Or with jQuery
-    
-      $('.dropdown-trigger').dropdown();
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+});
+
+// Or with jQuery
+
+$('.dropdown-trigger').dropdown();
 
 
