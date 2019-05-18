@@ -1,14 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <title>Project1</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon-->
+  <link rel="icon" href="./img/favicon.png" type="image/gif" sizes="16x16">
+
+  <!-- Quicksand Font -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <title>Calorie Stacker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1> Hello World!</h1>
+  <!--   NavBar Logo, Home & Link -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html"> <img src="./img/logoX.png" width="50" height="50"
+        class="d-inline-block align-center" alt=""><strong> Calorie Stacker</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./stats.html">Calculator</a>
+        </li>
+
+        <form class="form-inline">
+          <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+          <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+          </div>
+          <label class="sr-only" for="inlineFormInputName2">Name</label>
+          <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Password">
+
+          <div class="form-check mb-2 mr-sm-2">
+            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+            <label class="form-check-label" for="inlineFormCheck">
+              Remember me
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-warning mb-2">Sign In</button>
+        </form>
 
 
 
+
+      </ul>
+    </div>
+  </nav>
+
+  <!--  Backgroung Image with Search Bar  -->
+  <!-- Tip: For searchbar to funtion always use <form></form> -->
+  <div class="card bg-dark text-white">
+    <img src="./img/bread-color-cooking-1565982.jpg" class="card-img" alt="Header-Food">
+    <div class="card-img-overlay">
+      <h1 class="header-text">Calorie Stacker</h1>
+      <br>
+      <form>
+        <div class="input-group input-group-lg">
+
+          <!-- Place Holder Search Food Bar Use for API -->
+
+          <input type="text" class="form-control" placeholder="What did you eat today?" id="foodItem"
+            aria-label="Search" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row" id="results">
+    </div>
+    <div class="row" id="calories">
+    </div>
+    <div class="row" id="total">
+    </div>
+  </div>
+
+  <hr>
+  <!-- Testimonials -->
+  <h3 class="display-4">The Best Food Diary Tool!</h3>
+  <p class="lead">Simple database. Powerful feedback.</p>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Testimonials</h5>
+          <p class="card-text">"Your nutrition stacker was a HUGE part of reaching my goal. So, Thank you very very much
+            for being one of the tools that helped me reach my goal. And more importantly being the healthiest
+            and fittest I have ever been. I raced Dallas at about 186 lbs and feel great."</p>
+          <img src="./img/200x300.jpg" alt="..." class="rounded-circle">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Testimonials</h5>
+          <p class="card-text">"I lost 10 pounds just by utilizing your websites calorie stacker, and other members of
+            my family lost weight, too,
+            from the cumulative effect of all those little changes. The changes don’t feel like a “diet”; they are
+            changes that can be adopted for life.”</p>
+          <img src="./img/sunglasses.jpg" alt="..." class="rounded-circle">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Calorie Tablet Image-->
+  <!-- <img src="./img/calories.jpg" class="img-fluid" alt="Responsive image"> -->
+
+
+  <!-- To Be Continued -->
+  <!-- To Be Continued -->
+  <!-- To Be Continued -->
+  <!-- To Be Continued -->
+  <!-- To Be Continued -->
+  <h3 class="display-4">Why counting calories helps you lose weight.</h3>
+  <p class="lead">Get Results Now!</p>
+  <p>How to Lose Weight Counting Calories.</p>
+  <br>
+
+  <!-- Youtube embeded video -->
+  <div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" id="youtube" src="https://www.youtube.com/embed/Zus8gkwkPvs"></iframe>
+  </div>
+
+
+
+  <br class="youtube">
+
+
+
+
+
+  <!-- Sign Up Image-->
+  <!--code for the login box-->
+  <!-- Button trigger modal -->
+
+
+  <div class="card text-black">
+    <img src="./img/signup.jpg" class="card-img" alt="Sign Up Image">
+    <div class="card-img-overlay">
+      <h1 class="signUpText">Stacker Features</h1>
+      <p> &#9745; No Ads</p>
+      <p> &#9745; Personalized Calorie Calulator</p>
+      <p> &#9745; Nutrition Database </p>
+      <p> &#9745; Health Video Tips</p>
+      <br>
+
+      <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+        Sign Up
+      </button>
+
+
+    </div>
+  </div>
+
+
+
+  <!--  Modal (Alert PopUp to Sign Up For Services  -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Sign Up Today!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Type Form inside for Alert -->
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Create Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Create Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword4">Confirm Password</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Confirm Password">
+            </div>
+
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+<script type="text/javascript" src='./assets/javascript.js'></script>
+
 </html>

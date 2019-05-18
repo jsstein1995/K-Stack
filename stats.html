@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Favicon-->
+    <link rel="icon" href="./img/favicon.png" type="image/gif" sizes="16x16">
+
+    <!-- Quicksand Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/stats.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+
+    <title>Stats</title>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html"> <img src="./img/logoX.png" width="50" height="50" class="brand-logo"><strong
+                    class="logoHead"></a>
+            <a class="logoName" href="index.html"><strong>Calorie Stacker</strong></a>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                <li id="home-button"><a href="./index.html">Home</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Image & Heading for Stats -->
+
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./img/fruits.jpg">
+        </div>
+
+
+
+
+        <!-- Inside Stats Card Content -->
+        <!-- Inside Stats Card Content -->
+        <!-- Inside Stats Card Content -->
+        <!-- Inside Stats Card Content -->
+        <!-- Inside Stats Card Content -->
+
+        <h3>Find out your average Calorie Stacker per day.</h3>
+
+
+
+        <!-- Radio -->
+        <form action="#">
+            <p>
+                <label>
+                    <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked />
+                    <span>Male</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input id="female" type="radio" name="gender" onchange="calsPerDay()" />
+                    <span> Female</span>
+                </label>
+            </p>
+
+
+            <p>
+                <label>
+                    <input id="age" type="number" oninput="calsPerDay()" value="35" />
+                    <span> Age:</span>
+                    Years
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input id="height" type="number" oninput="calsPerDay()" value="66">
+                    <span> Height:</span>
+                    total inches (12 inches = 1 ft.)
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input id="weight" type="number" oninput="calsPerDay()" value="165">
+                    <span> Weight: </span>
+                    total pounds
+                </label>
+            </p>
+
+
+
+            <p>
+                <label onclick="calsPerDay">
+                    Base metabolic rate: <span id="totalCals"></span> kcal per day
+                </label>
+            </p>
+
+
+
+
+            <!-- Inside Stats Card Content -->
+            <!-- Inside Stats Card Content -->
+            <!-- Inside Stats Card Content -->
+            <!-- Inside Stats Card Content -->
+            <!-- Inside Stats Card Content -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./img/running.jpg">
+            </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src='./assets/stats.js'></script>
+</body>
+
+
+</html>

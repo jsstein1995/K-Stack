@@ -1,3 +1,159 @@
 body{
-    background: red;
+    background: transparent;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.jumbotron{
+    background-color: transparent;
+    text-align: center;
+}
+
+.row{
+    margin-bottom: 100px;
+}
+
+.header-text{
+    position: relative;
+    top: -60px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.navbar{
+    border-bottom: solid #ffc954 3px;
+    width: 100%;
+}
+
+.bg-dark {
+    background-color: #1a3142!important;
+
+}
+
+.display-4{
+    margin-top: 50px;
+}
+
+.lead{
+    margin-bottom: 25px;
+}
+
+.d-block{
+    width: 100%;
+}
+
+.card-title .form-inline{
+    text-align: center;
+     
+}
+
+.card-img-overlay{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-check-label{
+    color: white;
+}
+
+.form-inline{
+    padding-left: 180px;
+}
+
+.card{
+    border: none;
+}
+
+.signUpText{
+    color: #343a40;
+}
+
+.btn-outline-secondary{
+    /* background-color: #ffc954; */
+    color: white;
+}
+
+.embed-responsive{
+    height: 600px;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.embed-responsive{
+    height: 600px;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-bottom: 80px;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.calDiv {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    font-size: 25px;
+}
+
+.totalDiv {
+    position: relative;
+    top: -120px;
+    width: 100%;
+    font-size: 45px;
+}
+
+#total {
+    margin-bottom: 0;
+}
+
+hr {
+    border-width: 2px;
+}
+
+.foodDiv{
+    width: 100%;    
+}
+
+.foodDiv:hover{
+    background-color: #ffc954;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+@media (max-width: 576px) { 
+
+    .card-img{
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .img-fluid{
+        height: 300px;
+    }
+
+        .input-group-lg{
+            width: 100%;
+            width: 300px;
+            right: 75px;
+        }
+
+        .header-text{
+            font-size: 45px;
+        }
+
+        .embed-responsive{
+            height: 400px;
+        }
+
+        .signUpText{
+            margin-top: -70px;
+        }      
+    
 }
